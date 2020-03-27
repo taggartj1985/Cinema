@@ -43,9 +43,6 @@ class Ticket
     sql = "SELECT * FROM tickets"
     ticket = SqlRunner.run(sql)
     return ticket.map{|tickets| Ticket.new(tickets)}
-
   end
-
-
 
 end
