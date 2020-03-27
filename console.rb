@@ -32,11 +32,11 @@ film3.save
 film2.title = 'Childs Play'
 film2.update()
 
-ticket1 = Ticket.new({'customers_id' => customer4.id, 'films_id' => film2.id})
+ticket1 = Ticket.new({'customer_id' => customer4.id, 'film_id' => film2.id})
 ticket1.save()
-ticket2 = Ticket.new({'customers_id' => customer2.id, 'films_id' => film2.id})
+ticket2 = Ticket.new({'customer_id' => customer2.id, 'film_id' => film2.id})
 ticket2.save()
-ticket3 = Ticket.new({'customers_id' => customer3.id, 'films_id' => film1.id})
+ticket3 = Ticket.new({'customer_id' => customer3.id, 'film_id' => film1.id})
 ticket3.save()
 
 customer4.buy_ticket(film2)
@@ -45,7 +45,6 @@ customer2.buy_ticket(film2)
 customer2.update()
 customer3.buy_ticket(film1)
 customer3.update()
-
 
 Film.select_all()
 Customer.select_all()
