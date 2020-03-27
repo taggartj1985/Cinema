@@ -6,6 +6,7 @@ require_relative('models/tickets')
 require('pry')
 
 Customer.delete_all()
+# Film.delete_all()
 
 
 customer1 = Customer.new({'name' => 'Freddy', 'funds' => 100})
@@ -21,6 +22,8 @@ customer4.name = 'Leatherface'
 customer4.update()
 Customer.order_customers_by_name()
 
+film1 = Film.new({'title' => 'Day Of The Dead', 'price' => 4})
+film1.save
 
 
 
