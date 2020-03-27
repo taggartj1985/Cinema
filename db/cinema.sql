@@ -1,6 +1,6 @@
 DROP TABLE tickets;
-DROP TABLE customer;
-DROP TABLE film;
+DROP TABLE customers;
+DROP TABLE films;
 
 
 CREATE TABLE customers(
