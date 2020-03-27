@@ -17,6 +17,8 @@ customer3.save
 customer4 = Customer.new({'name' => 'Chucky', 'funds' => 40})
 customer4.save
 
+customer4.name = 'Leatherface'
+customer4.update()
 Customer.order_customers_by_name()
 
 
