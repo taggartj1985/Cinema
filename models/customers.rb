@@ -55,6 +55,13 @@ class Customer
     @funds -= film.price
   end
 
+  def tickets_sold()
+    sql = "SELECT * FROM tickets WHERE customer_id = $1"
+    values = [@id]
+    ticket_sold = SqlRunner.run(sql, values)
+    return ticket_sold.map{|movie|Ticket.new(movie)}
+  end
+
 
 
 end

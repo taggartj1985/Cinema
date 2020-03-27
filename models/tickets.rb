@@ -38,6 +38,7 @@ class Ticket
     SqlRunner.run(sql, values)
   end
 
+# IS ONLY RETURNING ONE EXAMPLE?
   def Ticket.select_all()
     sql = "SELECT * FROM tickets"
     ticket = SqlRunner.run(sql)

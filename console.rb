@@ -45,6 +45,10 @@ customer2.buy_ticket(film2)
 customer2.update()
 customer3.buy_ticket(film1)
 customer3.update()
+customer4.buy_ticket(film3)
+customer4.update()
+
+customer4.tickets_sold
 
 Film.select_all()
 Customer.select_all()
